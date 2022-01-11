@@ -21,7 +21,7 @@ const Shuttles = () => {
             {
                 shuttles.map(shuttle => <Shuttle
 
-                        key={shuttle['flight_number']}
+                        key={shuttle.launch_date_utc}
                         mission_name={shuttle.mission_name}
                         launch_year={shuttle.launch_year}
                         mission_patch_small={shuttle.links.mission_patch_small}
