@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+.App{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Users-list, .Posts-list{
+    flex: 0 1 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Users-list, .Posts-list, .Comments-list{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 600px;
+    overflow-y: scroll;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Posts-list{
+    background-color: cornflowerblue;
 }
 
-.App-link {
-  color: #61dafb;
+.Users-list{
+    background-color: darkkhaki;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Comments-list{
+    flex: 1 1 auto;
+    background-color: cornsilk;
+}
+
+.Item{
+    flex: 1 1 25%;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
