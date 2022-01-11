@@ -1,8 +1,6 @@
 import UserAddressGeo from "./UserAddressGeo";
 
-const UserAddress = (props) => {
-
-    let {street, suite, city, zipcode, geo} = props.address
+const UserAddress = ({address: {street, suite, city, zipcode, geo}}) => {
 
     return (
         <ul>

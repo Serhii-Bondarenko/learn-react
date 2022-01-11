@@ -1,7 +1,4 @@
-const UserAddressGeo = (props) => {
-
-    let {lat, lng} = props.geo;
-
+const UserAddressGeo = ({geo: {lat, lng}}) => {
     return (
         <ol>
             <i>geo</i>

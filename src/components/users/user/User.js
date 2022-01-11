@@ -1,9 +1,6 @@
 import UserAddress from "./User-address/UserAddress";
 
-const User = (props) => {
-
-    let {name, username, email, address} = props.user;
-
+const User = ({user:{name, username, email, address}}) => {
     return (
         <div className={'Item'}>
             <h2>{name}</h2>
