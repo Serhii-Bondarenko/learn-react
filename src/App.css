@@ -1,3 +1,41 @@
-.App{
+.users-list {
+    flex: 1 1 auto;
+    background-color: darkkhaki;
+}
+
+.users, .users-list, .user-posts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user, .user-post{
+    flex: 1 1 20%;
+    border: 1px solid grey;
+    padding: 15px;
+}
+
+.user h2 {
+    text-align: center;
+}
+
+button{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.user-info{
+    background-color: burlywood;
+    margin: 0;
+    padding: 10px;
+    border: 5px solid lightgreen;
+    flex: 0 1 20%;
+}
+
+.user-posts{
+    flex: 1 1 100%;
+}
+
+.user-post{
+    text-align: center;
     background-color: beige;
 }
