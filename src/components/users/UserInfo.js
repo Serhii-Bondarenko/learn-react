@@ -21,9 +21,9 @@ const UserInfo = ({chosenUser: {id, name, username, email, phone}, address, comp
                 <p>{key}: {company[key]}</p>
             )}
 
-            <button onClick={() => {
-                getItemPosts(id)
-            }}>User posts</button>
+            <button onClick={() => {getItemPosts(id)}}>
+                User posts
+            </button>
 
         </div>
     );
