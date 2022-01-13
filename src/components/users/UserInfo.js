@@ -1,4 +1,10 @@
-const UserInfo = ({chosenUser: {id, name, username, email, phone}, address, company, geo, getItemPosts}) => {
+const UserInfo = ({
+                      chosenUser: {id, name, username, email, phone},
+                      address: {street, suite, city, zipcode},
+                      company: {companyName, catchPhrase, bs},
+                      geo: {lat, lng},
+                      getItemPosts
+                  }) => {
 
     return (
         <div className={'user-info'}>
@@ -9,19 +15,28 @@ const UserInfo = ({chosenUser: {id, name, username, email, phone}, address, comp
             <p>phone: {phone}</p>
 
             <ul>
-                {Object.keys(address).map(key =>
-                    <li>
-                        {key !== 'geo' ? `${key}: ${address[key]}` : Object.keys(geo).map(innerKey =>
-
-                            <p>{`${innerKey}: ${geo[innerKey]}`}</p>)}
-                    </li>)}
+                address
+                <li>{street}</li>
+                <li>{suite}</li>
+                <li>{city}</li>
+                <li>zipcode: {zipcode}</li>
+                <ol>
+                    geo
+                    <li>lat: {lat}</li>
+                    <li>lng: {lng}</li>
+                </ol>
             </ul>
 
-            {Object.keys(company).map(key =>
-                <p>{key}: {company[key]}</p>
-            )}
+            <ul>
+                company
+                <li>{companyName}</li>
+                <li>{catchPhrase}</li>
+                <li>{bs}</li>
+            </ul>
 
-            <button onClick={() => {getItemPosts(id)}}>
+            <button onClick={() => {
+                getItemPosts(id)
+            }}>
                 User posts
             </button>
 

@@ -52,6 +52,7 @@ const Users = () => {
             <div className={'user-posts'}>
                 {targetPosts.map(post =>
                     <UserPost
+                        key={post.id}
                         post={post}
                     />
                 )}

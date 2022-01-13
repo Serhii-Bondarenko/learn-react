@@ -1,9 +1,10 @@
-const UserPost = ({post}) => {
+const UserPost = ({post:{userId, id, title, body}}) => {
     return (
         <div className={'user-post'}>
-            {Object.keys(post).map(key =>
-                <p>{key}: {post[key]}</p>
-            )}
+            <p>userId: {userId}</p>
+            <p>id: {id}</p>
+            <p>{title}</p>
+            <p>{body}</p>
         </div>
     );
 };
