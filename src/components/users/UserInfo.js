@@ -1,8 +1,8 @@
 const UserInfo = ({
                       chosenUser: {id, name, username, email, phone},
                       address: {street, suite, city, zipcode},
-                      company: {companyName, catchPhrase, bs},
                       geo: {lat, lng},
+                      company,
                       getItemPosts
                   }) => {
 
@@ -15,7 +15,7 @@ const UserInfo = ({
             <p>phone: {phone}</p>
 
             <ul>
-                address
+                ADDRESS
                 <li>{street}</li>
                 <li>{suite}</li>
                 <li>{city}</li>
@@ -28,10 +28,10 @@ const UserInfo = ({
             </ul>
 
             <ul>
-                company
-                <li>{companyName}</li>
-                <li>{catchPhrase}</li>
-                <li>{bs}</li>
+                COMPANY
+                <li>{company.name}</li>
+                <li>{company.catchPhrase}</li>
+                <li>{company.bs}</li>
             </ul>
 
             <button onClick={() => {
