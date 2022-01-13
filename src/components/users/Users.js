@@ -40,7 +40,6 @@ const Users = () => {
 
             {chosenUser && (
                 <UserInfo
-                    key={chosenUser.id}
                     chosenUser={chosenUser}
                     address={chosenUser.address}
                     geo={chosenUser.address.geo}
@@ -53,7 +52,6 @@ const Users = () => {
             <div className={'user-posts'}>
                 {targetPosts.map(post =>
                     <UserPost
-                        key={post.id}
                         post={post}
                     />
                 )}

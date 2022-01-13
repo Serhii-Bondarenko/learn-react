@@ -17,7 +17,9 @@ const UserInfo = ({chosenUser: {id, name, username, email, phone}, address, comp
                     </li>)}
             </ul>
 
-            {Object.keys(company).map(key => <p>{key}: {company[key]}</p>)}
+            {Object.keys(company).map(key =>
+                <p>{key}: {company[key]}</p>
+            )}
 
             <button onClick={() => {
                 getItemPosts(id)
