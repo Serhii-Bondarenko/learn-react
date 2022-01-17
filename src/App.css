@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.forms{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}

@@ -1,0 +1,8 @@
+.cars__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 10px;
+    background-color: darkkhaki;
+    padding: 10px;
+}

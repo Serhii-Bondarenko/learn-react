@@ -1,0 +1,17 @@
+.car{
+    flex: 0 1 15%;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: gainsboro;
+    padding: 10px;
+}
+.car .btn-danger{
+    background-color: red;
+    border: 1px solid black;
+    color: white;
+}
+
+button{
+    padding: 5px;
+    margin: 10px;
+}
