@@ -1,7 +1,7 @@
 .comment{
-    border: 1px solid black;
-    background-color: #f6aa12;
-    color: white;
+    border: 1px solid #f6aa12;
+    background-color: rgba(22,12,13,0.82);
+    color:  #f6aa12;
     font-weight: bold;
 }
 
