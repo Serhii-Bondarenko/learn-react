@@ -1,0 +1,7 @@
+.target-info .posts{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
