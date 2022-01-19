@@ -9,4 +9,8 @@ export const userService = {
         .then(response => response.data),
 
     getPostsById: (id) => axiosService.get(`${urls.users}/${id}${urls.posts}`)
+        .then(response => response.data),
+
+    getAlbumsById: (id) => axiosService.get(`${urls.users}/${id}${urls.albums}`)
+        .then(response => response.data)
 }

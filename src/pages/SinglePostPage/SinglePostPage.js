@@ -30,7 +30,9 @@ const SinglePostPage = () => {
                 <p>{post.title}</p>
                 <p>{post.body}</p>
 
-                <Link to={'comments'}><button>Comments</button></Link>
+                <Link to={'comments'}>
+                    <button>Comments</button>
+                </Link>
             </div>}
 
             <Outlet/>

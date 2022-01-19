@@ -16,7 +16,7 @@ const CommentsPage = () => {
 
     return (
         <div className={'comments info-arr'}>
-            {comments.map(comment => <Comment ket={comment.id} item={comment}/>)}
+            {comments.map(comment => <Comment key={comment.id} item={comment}/>)}
         </div>
     );
 };

@@ -1,4 +1,10 @@
 .user{
     background-color: #40bff8;
     color: white;
+    flex: 1 1 400px;
+}
+
+.user a:hover{
+    color: white;
+    transition: 0.3s;
 }

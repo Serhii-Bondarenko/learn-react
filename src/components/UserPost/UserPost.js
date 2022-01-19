@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './userPost.css'
+import './userPost.css';
 
 const UserPost = ({item}) => {
     const {userId, id, title, body} = item

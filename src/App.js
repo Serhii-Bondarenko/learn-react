@@ -9,6 +9,8 @@ import SingleUserPage from "./pages/SingleUserPage/SingleUserPage";
 import PostsOfUserPage from "./pages/PostsOfUserPage/PostsOfUserPage";
 import SinglePostPage from "./pages/SinglePostPage/SinglePostPage";
 import CommentsPage from "./pages/CommentsPage/CommentsPage";
+import UsersAlbumsPage from "./pages/UsersAlbumsPage/UsersAlbumsPage";
+import AlbumsPhotosPage from "./pages/AlbumsPhotosPage/AlbumsPhotosPage";
 
 
 const App = () => {
@@ -19,6 +21,9 @@ const App = () => {
                     <Route path={'users'} element={<UsersPage/>}>
                         <Route path={':id'} element={<SingleUserPage/>}>
                             <Route path={'posts'} element={<PostsOfUserPage/>}/>
+                        </Route>
+                        <Route path={':id/albums'} element={<UsersAlbumsPage/>}>
+                            <Route path={':albumId/photos'} element={<AlbumsPhotosPage/>}/>
                         </Route>
                     </Route>
                     <Route path={'posts'} element={<PostsPage/>}>

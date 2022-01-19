@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import {userService} from "../../services/user.service";
-
 import {useParams} from "react-router-dom";
+
+import {userService} from "../../services/user.service";
 import UserPost from "../../components/UserPost/UserPost";
 import './postsOfUserPage.css'
 
@@ -13,7 +13,8 @@ const PostsOfUserPage = () => {
 
     useEffect(() => {
         userService.getPostsById(id)
-            .then(response => setUserPosts(response.data))
+            .then(response => setUserPosts(response))
+
     }, [id])
 
     return (

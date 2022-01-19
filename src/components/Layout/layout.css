@@ -12,9 +12,18 @@ a{
     color: black;
 }
 
+a:hover{
+    color: #f6aa12;
+    transition: 0.3s;
+}
+
 .active{
     font-weight: bold;
     color: #f6aa12;
+}
+
+button{
+    cursor: pointer;
 }
 
 .main{
