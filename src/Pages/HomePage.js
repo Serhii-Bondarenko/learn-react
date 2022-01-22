@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import {Link, Outlet} from "react-router-dom";
 
-import css from './home.module.css';
 import {baseURL, urls} from "../config";
+import css from './home.module.css';
 import {Img} from "../components";
 
 const HomePage = () => {
