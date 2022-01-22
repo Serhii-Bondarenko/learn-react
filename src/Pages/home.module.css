@@ -1,0 +1,14 @@
+.home{
+    display: flex;
+    column-gap: 100px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.buttons button{
+    padding: 10px 50px;
+}
