@@ -1,13 +1,9 @@
-import {useRef} from "react";
-
 import css from './img.module.css';
 
 const Img = ({url, setURL}) => {
 
-    const newImg = useRef(url);
-
     const updateImg = () => {
-        setURL(`${newImg.current}?random=${Math.floor(Math.random() * (10 - 1 + 1)) + 1}`);
+        setURL(`${url}?random=${Math.floor(Math.random() * (10 - 1 + 1)) + 1}`);
     }
     
     return (
