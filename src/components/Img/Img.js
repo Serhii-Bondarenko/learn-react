@@ -1,15 +1,25 @@
+import {UncachedImage} from "react-uncached-image";
+
 import css from './img.module.css';
 
 const Img = ({url, setURL}) => {
 
     const updateImg = () => {
-        setURL(`${url}?random=${Math.floor(Math.random() * (10 - 1 + 1)) + 1}`);
+
+        if (url.includes('?random=1')) {
+            setURL(url.replaceAll('?random=1', ''));
+
+        } else {
+            setURL(`${url}?random=1`);
+
+        }
+
     }
-    
+
     return (
         <div className={css.img}>
-            <img src={url} alt="img"/>
-            <button onClick={()=>updateImg()}>Update</button>
+            <UncachedImage src={url} alt="img"/>
+            <button onClick={() => updateImg()}>Update</button>
         </div>
     );
 };

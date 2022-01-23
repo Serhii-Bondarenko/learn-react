@@ -8,7 +8,7 @@ const HomePage = () => {
 
     const [url, setURL] = useState(baseURL);
 
-    const selectImg = (URL) => setURL(URL);
+    const selectImg = URL => setURL(URL);
 
     return (
         <div className={css.home}>
