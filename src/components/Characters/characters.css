@@ -1,0 +1,9 @@
+.characters-list{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.82);
+    justify-content: space-evenly;
+    padding: 60px;
+    gap: 20px;
+    text-align: left;
+}
