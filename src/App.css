@@ -1,0 +1,11 @@
+.wrap{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+}
+
+form, .pets{
+    display: flex;
+    justify-content: space-between;
+}
