@@ -4,8 +4,8 @@ const Dog = ({item, dogs, deletePet}) => {
     return (
         <>
             <div>
-                <p>{item}</p>
-                <button onClick={() => deletePet(item, dogs, "dogs")}>Delete</button>
+                <p>{item.name}</p>
+                <button onClick={() => deletePet(item.name, dogs, "dogs")}>Delete</button>
             </div>
             <hr/>
         </>
