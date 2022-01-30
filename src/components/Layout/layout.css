@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.active{
+    color: lightsalmon;
+}
+
+.header{
+    background-color: lightslategrey;
+    padding: 20px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+nav li{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.item{
+    padding: 10px;
+    border: 1px silver solid;
+    flex: 0 1 20%;
+}
+
+.item h3{
+    text-align: center;
+}
+
+.item > div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.item li{
+    margin: 10px 0;
+}
+
+.wrap-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 10px;
+}
