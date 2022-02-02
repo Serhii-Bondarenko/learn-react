@@ -32,7 +32,7 @@ const Form = () => {
                            onChange={(e) => dispatch(getData(e.target.value))}/>
                     <button>Add</button>
                 </div>
-                {iterateTask && <span>A {iterateTask} already exists</span>}
+                {iterateTask && <span>A "{iterateTask}" already exists</span>}
             </form>
         </>
     );
