@@ -15,12 +15,12 @@ const Form = () => {
 
         if (inputValue) {
 
-            if (toDoList.find(task => task.title.toLowerCase() === inputValue.toLowerCase())) {
+            if (toDoList.find(task => task.title.toLowerCase().trim() === inputValue.toLowerCase().trim())) {
                 dispatch(catchCopy(inputValue));
                 return;
             }
 
-            dispatch(handleData({inputValue}));
+            dispatch(handleData({inputValue: inputValue.trim()}));
         }
     }
 
@@ -29,7 +29,7 @@ const Form = () => {
             <form className={css.form} onSubmit={submit}>
                 <div>
                     <input type='text' name={'toDo'} placeholder={'to do...'} value={inputValue}
-                           onChange={(e) => dispatch(getData(e.target.value.trim()))}/>
+                           onChange={(e) => dispatch(getData(e.target.value))}/>
                     <button>Add</button>
                 </div>
                 {iterateTask && <span>A {iterateTask} already exists</span>}
